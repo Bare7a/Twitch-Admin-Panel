@@ -1,0 +1,150 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="https://embed.twitch.tv/embed/v1.js"></script>
+  <script type="text/javascript" src="libraries/jquery.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-sm-3" id="adminPanel">
+      <div class="row" id="commands">
+        <div class="col-sm-12">
+          <h4 id="points">Points</h4>
+
+          <div class="col-sm-9">
+            <input id="pointsUsername" type="text" class="form-control" placeholder="Username | +Viewers | +Active">
+          </div>
+          <div class="col-sm-3">
+            <input id="pointsPoints" type="number" class="form-control" placeholder="Points">
+          </div>
+
+          <div class="col-sm-6">
+            <button id="pointsTake" type="button" class="btn  btn-danger form-control">Take</button>
+          </div>
+          <div class="col-sm-6">
+            <button id="pointsGive" type="button" class="btn btn-success form-control">Give</button>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <h4 id="betting">Betting</h4>
+          <div class="col-sm-9">
+            <input id="bettingTitle" type="text" class="form-control" placeholder="Title">
+          </div>
+          <div class="col-sm-3">
+            <input id="bettingMin" type="number" class="form-control" placeholder="Min">
+          </div>
+
+          <div class="col-sm-9">
+            <input id="bettingQuestions" type="text" class="form-control" placeholder="Questions">
+          </div>
+          <div class="col-sm-3">
+            <input id="bettingMax" type="number" class="form-control" placeholder="Max">
+          </div>
+
+          <div class="col-sm-4">
+            <input id="bettingWinner" type="number" class="form-control" placeholder="Winner">
+          </div>
+          <div class="col-sm-4">
+            <input id="bettingPayout" type="number" class="form-control" placeholder="Payout">
+          </div>
+          <div class="col-sm-4">
+            <select class="form-control">
+              <option id="bettingMultiple">Multiple</option>
+              <option>True</option>
+              <option>False</option>
+            </select>
+          </div>
+
+          <div class="col-sm-4">
+            <button id="bettingWinnerBtn" type="button" class="btn  btn-info form-control">Winner</button>
+          </div>
+          <div class="col-sm-4">
+            <button id="bettingStop" type="button" class="btn  btn-danger form-control">Stop</button>
+          </div>
+          <div class="col-sm-4">
+            <button id="bettingStart" type="button" class="btn btn-success form-control">Start</button>
+          </div>
+
+          <div class="col-sm-12">
+            <h4 id="polls">Polls</h4>
+
+            <div class="col-sm-12">
+              <input id="pollsTitle" type="text" class="form-control" placeholder="Title">
+            </div>
+
+            <div class="col-sm-12">
+              <input id="pollsOptions" type="text" class="form-control" placeholder="Options">
+            </div>
+
+            <div class="col-sm-4">
+              <input id="pollsCost" type="number" class="form-control" placeholder="Cost">
+            </div>
+
+            <div class="col-sm-4">
+              <input id="pollsMax" type="number" class="form-control" placeholder="Max Votes">
+            </div>
+
+            <div class="col-sm-4">
+
+              <select class="form-control">
+                <option id="pollsMultiple">Multiple</option>
+                <option>True</option>
+                <option>False</option>
+              </select>
+            </div>
+
+            <div class="col-sm-6">
+              <button id="pollsStop" type="button" class="btn  btn-danger form-control">Stop</button>
+            </div>
+            <div class="col-sm-6">
+              <button id="pollsStart" type="button" class="btn btn-success form-control">Start</button>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <h4 id="other">Other</h4>
+
+            <div class="col-sm-9">
+              <input id="otherVariable" type="text" class="form-control" placeholder="Variable">
+            </div>
+            <div class="col-sm-3">
+              <button id="otherName" type="button" class="btn btn-success form-control">Name</button>
+            </div>
+            <div class="col-sm-3">
+              <button id="otherSkip" type="button" class="btn btn-danger form-control">Skip</button>
+            </div>
+            <div class="col-sm-3">
+              <button id="otherTimeout" type="button" class="btn btn-danger form-control">Timeout</button>
+            </div>
+            <div class="col-sm-3">
+              <button id="otherBan" type="button" class="btn btn-danger form-control">Ban</button>
+            </div>
+            <div class="col-sm-3">
+              <button id="otherGame" type="button" class="btn btn-success form-control">Game</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-9" id="twitchPlayer">
+      <div id="toggleDiv">
+        <button id="size1" type="button" class="btn btn-default">Size 1</button>
+        <button id="size2" type="button" class="btn btn-default">Size 2</button>
+        <button id="size3" type="button" class="btn btn-default">Size 3</button>
+        <button id="size4" type="button" class="btn btn-default">Size 4</button>
+        <button id="toggleButton" type="button" class="btn btn-default">Show</button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="languages/Bulgarian.js"></script>
+    <script type="text/javascript" src="languages/English.js"></script>
+    <script type="text/javascript" src="scripts/variables.js"></script> 
+    <script type="text/javascript" src="scripts/functions.js"></script>
+  </body>
+  </html>
