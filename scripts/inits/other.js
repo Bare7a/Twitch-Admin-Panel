@@ -21,12 +21,12 @@ function initOther()
 	});
 
 	$("#otherName").click(function (e){
-		var output = "!game " + $("#otherVariable").val();
+		var output = "!status " + $("#otherVariable").val();
 		copyToClipboard(output);
 	});
 
 	$("#otherGame").click(function (e){
-		var output = "!status " + $("#otherVariable").val();
+		var output = "!game " + $("#otherVariable").val();
 		copyToClipboard(output);
 	});
 }
