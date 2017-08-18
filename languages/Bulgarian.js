@@ -17,6 +17,8 @@ var Bulgarian =
 		"Winner" : "Победител",
 		"Payout" : "Печалба %",
 		"Multiple" : "Многократни",
+		"MultipleYes" : "Да",
+		"MultipleNo" : "Не",
 		"Start" : "Започни",
 		"Stop" : "Спри",
 	},
@@ -28,6 +30,8 @@ var Bulgarian =
 		"Cost" : "Цена",
 		"MaxVote" : "Макс Гласувания",
 		"Multiple" : "Многократни",
+		"MultipleYes" : "Да",
+		"MultipleNo" : "Не",
 		"Start" : "Започни",
 		"Stop" : "Спри",
 	},
@@ -35,10 +39,20 @@ var Bulgarian =
 	{
 		"Other" : "Други",
 		"Variable" : "Променлива",
-		"ChannelName" : "Име",
-		"ChannelGame" : "Игра",
-		"SkipSong" : "Прескочи",
-		"BanUser" : "Банни",
-		"TimeoutUser" : "Таймаут"
-	}
+		"ChannelName" : "Име на канала",
+		"ChannelGame" : "Игра на канала",
+		"SkipSong" : "Прескочи Песен",
+		"AddSong" : "Добави Песен",
+		"BanUser" : "Банни Потребител",
+		"TimeoutUser" : "Таймаут Потребител"
+	},
+	"Toggle" : 
+	{
+		"Show" : "Покажи",
+		"Hide" : "Скрий",
+		"Size1" : "1",
+		"Size2" : "2",
+		"Size3" : "3",
+		"Size4" : "4",
+	} 
 }

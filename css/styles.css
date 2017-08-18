@@ -1,3 +1,8 @@
+body
+{
+	background-color: #141219;
+}
+
 .row
 {
 	margin: 0px;
@@ -15,18 +20,31 @@
 
 #adminPanel
 {
-	padding: 0px 10px 10px 10px;
+	padding: 0px 10px 0px 10px;
 }
 
 #toggleDiv
 {
 	position: absolute;
-	right: 2px;
-	top: 4px;
-	background-color: #000;
+	padding: 8px;
+	right: 4px;
+	top: 6px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	background-color: #212121;
 }
 
-#size3, #size4, #size5, #size6, #switchButton
+#toggle
+{
+	width: 86px;
+}
+
+#language
+{
+	width: 68px;
+}
+
+#size3, #size4, #size5, #size6, #toggle
 {
 	display: inline;
 } 
@@ -34,4 +52,96 @@
 .col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12
 {
 	padding: 0px;
+}
+
+.btn 
+{
+	padding: 6px 12px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-success
+{
+	background-image: -webkit-linear-gradient(#009900, #007000, #007000);
+	background-image: -o-linear-gradient(#009900, #007000, #007000);
+}
+
+.btn-danger
+{
+	background-color: #e40a0a; background-image: -webkit-gradient(linear, left top, left bottom, from(#e40a0a), to(#9f0202));
+	background-image: -webkit-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: -moz-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: -ms-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: -o-linear-gradient(top, #e40a0a, #9f0202);
+	background-image: linear-gradient(to bottom, #e40a0a, #9f0202);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#e40a0a, endColorstr=#9f0202);
+}
+
+.btn-info
+{
+	/*border:1px solid #25729a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;*/
+	background-color: #3093c7; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093c7), to(#1c5a85));
+	background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
+	background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
+	background-image: -ms-linear-gradient(top, #3093c7, #1c5a85);
+	background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
+	background-image: linear-gradient(to bottom, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);}
+}
+
+.btn-info:hover
+{
+	/*border:1px solid #1c5675;*/
+	background-color: #26759e; background-image: -webkit-gradient(linear, left top, left bottom, from(#26759e), to(#133d5b));
+	background-image: -webkit-linear-gradient(top, #26759e, #133d5b);
+	background-image: -moz-linear-gradient(top, #26759e, #133d5b);
+	background-image: -ms-linear-gradient(top, #26759e, #133d5b);
+	background-image: -o-linear-gradient(top, #26759e, #133d5b);
+	background-image: linear-gradient(to bottom, #26759e, #133d5b);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#26759e, endColorstr=#133d5b);
+}
+.form-control
+{
+	height: 35px;
+}
+
+.form-custom
+{
+	color: white;
+	background: rgba(50, 50, 50, 1);
+	border: 1 black;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+
+h4
+{
+	padding: 0px;
+	margin: 10px 0 4px 0;
+}
+
+input, select, textarea {
+/*    padding: 0 10px;
+    height: 30px;
+    color: #bbb;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0.16);
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);*/
+}
+
+.form-custom::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #F0E68C;
+}
+.form-custom::-moz-placeholder { /* Firefox 19+ */
+	color: #F0E68C;
+}
+.form-custom:-ms-input-placeholder { /* IE 10+ */
+	color: #F0E68C;
+}
+.form-custom:-moz-placeholder { /* Firefox 18- */
+	color: #F0E68C;
 }

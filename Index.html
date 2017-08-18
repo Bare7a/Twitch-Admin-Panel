@@ -9,16 +9,16 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-     <div class="col-sm-3" id="adminPanel">
+     <div id="adminPanel">
       <div class="row" id="commands">
         <div class="col-sm-12">
           <h4 id="points">Points</h4>
 
           <div class="col-sm-9">
-            <input id="pointsUsername" type="text" class="form-control" placeholder="Username | +Viewers | +Active">
+            <input id="pointsUsername" type="text" class="form-control form-custom" placeholder="Username | +Viewers | +Active">
           </div>
           <div class="col-sm-3">
-            <input id="pointsPoints" type="number" class="form-control" placeholder="Points">
+            <input id="pointsPoints" type="number" class="form-control form-custom" placeholder="Points">
           </div>
 
           <div class="col-sm-6">
@@ -32,30 +32,30 @@
         <div class="col-sm-12">
           <h4 id="betting">Betting</h4>
           <div class="col-sm-9">
-            <input id="bettingTitle" type="text" class="form-control" placeholder="Title">
+            <input id="bettingTitle" type="text" class="form-control form-custom" placeholder="Title">
           </div>
           <div class="col-sm-3">
-            <input id="bettingMin" type="number" class="form-control" placeholder="Min">
+            <input id="bettingMin" type="number" class="form-control form-custom" placeholder="Min">
           </div>
 
           <div class="col-sm-9">
-            <input id="bettingQuestions" type="text" class="form-control" placeholder="Questions">
+            <input id="bettingQuestions" type="text" class="form-control form-custom" placeholder="Questions">
           </div>
           <div class="col-sm-3">
-            <input id="bettingMax" type="number" class="form-control" placeholder="Max">
+            <input id="bettingMax" type="number" class="form-control form-custom" placeholder="Max">
           </div>
 
           <div class="col-sm-4">
-            <input id="bettingWinner" type="number" class="form-control" placeholder="Winner">
+            <input id="bettingWinner" type="number" class="form-control form-custom" placeholder="Winner">
           </div>
           <div class="col-sm-4">
-            <input id="bettingPayout" type="number" class="form-control" placeholder="Payout">
+            <input id="bettingPayout" type="number" class="form-control form-custom" placeholder="Payout">
           </div>
           <div class="col-sm-4">
-            <select class="form-control">
-              <option id="bettingMultiple">Multiple</option>
-              <option>True</option>
-              <option>False</option>
+            <select id="bettingMultipleSelect" class="form-control form-custom">
+              <option id="bettingMultiple" value="false">Multiple</option>
+              <option id="bettingMultipleYes" value="true">Yes</option>
+              <option id="bettingMultipleNo" value="false">No</option>
             </select>
           </div>
 
@@ -73,27 +73,27 @@
             <h4 id="polls">Polls</h4>
 
             <div class="col-sm-12">
-              <input id="pollsTitle" type="text" class="form-control" placeholder="Title">
+              <input id="pollsTitle" type="text" class="form-control form-custom" placeholder="Title">
             </div>
 
             <div class="col-sm-12">
-              <input id="pollsOptions" type="text" class="form-control" placeholder="Options">
+              <input id="pollsOptions" type="text" class="form-control form-custom" placeholder="Options">
             </div>
 
             <div class="col-sm-4">
-              <input id="pollsCost" type="number" class="form-control" placeholder="Cost">
+              <input id="pollsCost" type="number" class="form-control form-custom" placeholder="Cost">
             </div>
 
             <div class="col-sm-4">
-              <input id="pollsMax" type="number" class="form-control" placeholder="Max Votes">
+              <input id="pollsMax" type="number" class="form-control form-custom" placeholder="Max Votes">
             </div>
 
             <div class="col-sm-4">
 
-              <select class="form-control">
-                <option id="pollsMultiple">Multiple</option>
-                <option>True</option>
-                <option>False</option>
+              <select id="pollsMultipleSelect" class="form-control form-custom">
+                <option value="false" id="pollsMultiple">Multiple</option>
+                <option value="true" id="pollsMultipleYes">Yes</option>
+                <option value="false" id="pollsMultipleNo">No</option>
               </select>
             </div>
 
@@ -108,43 +108,60 @@
           <div class="col-sm-12">
             <h4 id="other">Other</h4>
 
-            <div class="col-sm-9">
-              <input id="otherVariable" type="text" class="form-control" placeholder="Variable">
+            <div class="col-sm-12">
+              <input id="otherVariable" type="text" class="form-control form-custom" placeholder="Variable">
             </div>
-            <div class="col-sm-3">
-              <button id="otherName" type="button" class="btn btn-success form-control">Name</button>
+            <div class="col-sm-6">
+              <button id="otherSkip" type="button" class="btn btn-danger form-control">Skip Song</button>
             </div>
-            <div class="col-sm-3">
-              <button id="otherSkip" type="button" class="btn btn-danger form-control">Skip</button>
+            <div class="col-sm-6">
+              <button id="otherAdd" type="button" class="btn btn-success form-control">Add Song</button>
             </div>
-            <div class="col-sm-3">
-              <button id="otherTimeout" type="button" class="btn btn-danger form-control">Timeout</button>
+            <div class="col-sm-6">
+              <button id="otherBan" type="button" class="btn btn-danger form-control">Ban User</button>
             </div>
-            <div class="col-sm-3">
-              <button id="otherBan" type="button" class="btn btn-danger form-control">Ban</button>
+            <div class="col-sm-6">
+              <button id="otherTimeout" type="button" class="btn btn-success form-control">Timeout User</button>
             </div>
-            <div class="col-sm-3">
-              <button id="otherGame" type="button" class="btn btn-success form-control">Game</button>
+            <div class="col-sm-6">
+              <button id="otherGame" type="button" class="btn btn-info form-control">Channel Game</button>
+            </div>
+            <div class="col-sm-6">
+              <button id="otherName" type="button" class="btn btn-info form-control">Channel Name</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col-sm-9" id="twitchPlayer">
+    <div id="twitchPanel">
       <div id="toggleDiv">
+      <div id="languageDiv" style="display: inline-block;">
+          <select id="language" class="form-control form-custom">
+
+          </select>
+        </div>
         <button id="size1" type="button" class="btn btn-default">Size 1</button>
         <button id="size2" type="button" class="btn btn-default">Size 2</button>
         <button id="size3" type="button" class="btn btn-default">Size 3</button>
         <button id="size4" type="button" class="btn btn-default">Size 4</button>
-        <button id="toggleButton" type="button" class="btn btn-default">Show</button>
+        <button id="toggle" type="button" class="btn btn-default">Hide</button>
       </div>
     </div>
 
     <!-- Scripts -->
     <script type="text/javascript" src="languages/Bulgarian.js"></script>
     <script type="text/javascript" src="languages/English.js"></script>
-    <script type="text/javascript" src="scripts/variables.js"></script> 
+    <script type="text/javascript" src="settings.js"></script> 
     <script type="text/javascript" src="scripts/functions.js"></script>
+    <script type="text/javascript" src="scripts/inits/betting.js"></script>
+    <script type="text/javascript" src="scripts/inits/language.js"></script>
+    <script type="text/javascript" src="scripts/inits/other.js"></script>
+    <script type="text/javascript" src="scripts/inits/panels.js"></script>
+    <script type="text/javascript" src="scripts/inits/points.js"></script>
+    <script type="text/javascript" src="scripts/inits/polls.js"></script>
+    <script type="text/javascript" src="scripts/inits/toggles.js"></script>
+    <script type="text/javascript" src="scripts/inits/twitch.js"></script>
+    <script type="text/javascript" src="scripts/initializer.js"></script>
   </body>
   </html>

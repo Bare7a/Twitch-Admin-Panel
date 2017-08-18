@@ -1,64 +1,20 @@
-$(document).ready(function() {
-	document.title = title;
-
-	var embed = new Twitch.Embed("twitchPlayer", {
-		width: "100%",
-		height: "100%",
-		theme : "dark",
-		channel: channelName
-	});
-
-	$(document).keydown(function(e){
-		if (e.keyCode == 192) { 
-			toggleMenu();
-		}
-	});
-
-	$("#size1").click(function (e)
-	{
-		changeSize(2);
-	});
-
-	$("#size2").click(function (e)
-	{
-		changeSize(3);
-	});
-
-	$("#size3").click(function (e)
-	{
-		changeSize(4);
-	});
-
-	$("#size4").click(function (e)
-	{
-		changeSize(5);
-	});
-
-	$("#toggleButton").click(function (e)
-	{
-		toggleMenu();
-	});
-
-	changeLanguage(language);
-});
-
 function toggleMenu() {
 	if($('#adminPanel').is(':visible')) {
 		$("#adminPanel").toggle(false);
-		$("#twitchPlayer").removeClass("col-sm-" + (12 - size)).addClass("col-sm-12");
-		$("#toggleButton").text("Hide");
+		$("#twitchPanel").removeClass("col-sm-" + (12 - size)).addClass("col-sm-12");
+		$("#toggle").text(language.Toggle.Show);
 	} else {
 		$("#adminPanel").toggle(true);
-		$("#twitchPlayer").removeClass("col-sm-12").addClass("col-sm-" + (12 - size));
-		$("#toggleButton").text("Show");
+		$("#twitchPanel").removeClass("col-sm-12").addClass("col-sm-" + (12 - size));
+		$("#toggle").text(language.Toggle.Hide);
 	}
 }
 
 function changeSize(newSize) {
+	$("#adminPanel").toggle(true);
+	$("#toggle").text(language.Toggle.Hide);
 	$("#adminPanel").removeClass("col-sm-" + size).addClass("col-sm-" + newSize);
-	console.log("Size: " + size + " | New Size: " + newSize);
-	$("#twitchPlayer").removeClass("col-sm-" + (12 - size)).addClass("col-sm-" + (12 - newSize));
-	console.log("Size: " +  (12 - size) + " | New Size: " + (12 - newSize));
+	$("#twitchPanel").removeClass("col-sm-" + (12 - size)).addClass("col-sm-" + (12 - newSize));
 	size = newSize;
 }
 
@@ -86,6 +42,8 @@ function changeLanguage(language)
 	$('#bettingWinner').attr("placeholder", language.Betting.Winner);
 	$('#bettingPayout').attr("placeholder", language.Betting.Payout);
 	$('#bettingMultiple').text(language.Betting.Multiple);
+	$('#bettingMultipleYes').text(language.Betting.MultipleYes);
+	$('#bettingMultipleNo').text(language.Betting.MultipleNo);
 	$('#bettingWinnerBtn').text(language.Betting.Winner);
 	$('#bettingStop').text(language.Betting.Stop);
 	$('#bettingStart').text(language.Betting.Start);
@@ -96,6 +54,8 @@ function changeLanguage(language)
 	$('#pollsCost').attr("placeholder", language.Polls.Cost);
 	$('#pollsMax').attr("placeholder", language.Polls.MaxVote);
 	$('#pollsMultiple').text(language.Polls.Multiple);
+	$('#pollsMultipleYes').text(language.Polls.MultipleYes);
+	$('#pollsMultipleNo').text(language.Polls.MultipleNo);
 	$('#pollsStop').text(language.Polls.Stop);
 	$('#pollsStart').text(language.Polls.Start);
 
@@ -104,6 +64,13 @@ function changeLanguage(language)
 	$('#otherName').text(language.Other.ChannelName);
 	$('#otherGame').text(language.Other.ChannelGame);
 	$('#otherSkip').text(language.Other.SkipSong);
+	$('#otherAdd').text(language.Other.AddSong);
 	$('#otherTimeout').text(language.Other.TimeoutUser);
 	$('#otherBan').text(language.Other.BanUser);
+
+	$('#toggle').text(language.Toggle.Hide);
+	$('#size1').text(language.Toggle.Size1);
+	$('#size2').text(language.Toggle.Size2);
+	$('#size3').text(language.Toggle.Size3);
+	$('#size4').text(language.Toggle.Size4);
 }
