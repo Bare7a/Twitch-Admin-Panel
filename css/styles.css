@@ -28,7 +28,7 @@ body
 	position: absolute;
 	padding: 8px;
 	right: 4px;
-	top: 6px;
+	top: 8px;
 	border-radius: 10px;
 	border: 1px dashed black;
 	background-color: #212121;
@@ -36,7 +36,7 @@ body
 
 #toggle
 {
-	width: 86px;
+	width: 90px;
 }
 
 #language
