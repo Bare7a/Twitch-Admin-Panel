@@ -6,7 +6,7 @@ function initToggles()
 	});
 
 	$(document).keydown(function(e){
-		if (e.keyCode == 192) { 
+		if (e.keyCode == hotkey) { 
 			toggleMenu();
 		}
 	});
