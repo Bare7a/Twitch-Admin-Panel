@@ -41,9 +41,8 @@ var English =
 		"Variable" : "Variable",
 		"ChannelName" : "Channel Name",
 		"ChannelGame" : "Channel Game",
-		"AddSong" : "Add Song",
 		"SkipSong" : "Skip Song",
-		"AddSong" : "Add Song",
+		"SongVolume" : "Music Volume",
 		"BanUser" : "Ban User",
 		"TimeoutUser" : "Timeout User"
 	},
@@ -51,9 +50,5 @@ var English =
 	{
 		"Show" : "Show",
 		"Hide" : "Hide",
-		"Size1" : "1",
-		"Size2" : "2",
-		"Size3" : "3",
-		"Size4" : "4",
 	} 
 }

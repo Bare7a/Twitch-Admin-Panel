@@ -5,8 +5,8 @@ function initOther()
 		copyToClipboard(output);
 	});
 
-	$("#otherAdd").click(function (e){
-		var output = "!sr " + $("#otherVariable").val();
+	$("#otherVolume").click(function (e){
+		var output = "!volume " + $("#otherVariable").val();
 		copyToClipboard(output);
 	});
 

@@ -42,7 +42,7 @@ var Bulgarian =
 		"ChannelName" : "Име на канала",
 		"ChannelGame" : "Игра на канала",
 		"SkipSong" : "Прескочи Песен",
-		"AddSong" : "Добави Песен",
+		"SongVolume" : "Сила на Звука",
 		"BanUser" : "Банни Потребител",
 		"TimeoutUser" : "Таймаут Потребител"
 	},
@@ -50,9 +50,5 @@ var Bulgarian =
 	{
 		"Show" : "Покажи",
 		"Hide" : "Скрий",
-		"Size1" : "1",
-		"Size2" : "2",
-		"Size3" : "3",
-		"Size4" : "4",
 	} 
 }

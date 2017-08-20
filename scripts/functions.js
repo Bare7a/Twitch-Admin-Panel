@@ -64,13 +64,9 @@ function changeLanguage(language)
 	$('#otherName').text(language.Other.ChannelName);
 	$('#otherGame').text(language.Other.ChannelGame);
 	$('#otherSkip').text(language.Other.SkipSong);
-	$('#otherAdd').text(language.Other.AddSong);
+	$('#otherVolume').text(language.Other.SongVolume);
 	$('#otherTimeout').text(language.Other.TimeoutUser);
 	$('#otherBan').text(language.Other.BanUser);
 
 	$('#toggle').text(language.Toggle.Hide);
-	$('#size1').text(language.Toggle.Size1);
-	$('#size2').text(language.Toggle.Size2);
-	$('#size3').text(language.Toggle.Size3);
-	$('#size4').text(language.Toggle.Size4);
 }
