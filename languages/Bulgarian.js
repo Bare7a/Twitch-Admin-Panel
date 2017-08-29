@@ -1,11 +1,20 @@
 var Bulgarian =
 {
+	"Config" :
+	{
+		"Twitch" : "Канал в Twitch",
+		"Title" : "Заглавие на панела",
+		"Delimeter" : "Разделител",
+		"Language" : "Език",
+		"Submit" : "Подай",
+		"Settings" : "Настройки"
+	},
 	"Points" : 
 	{
 		"Points" : "Точки",
 		"Username" : "Никнейм | +Viewers | +Active",
 		"Give" : "Раздай",
-		"Take" : "Вземи",
+		"Take" : "Вземи"
 	},
 	"Betting" :
 	{
@@ -20,7 +29,7 @@ var Bulgarian =
 		"MultipleYes" : "Да",
 		"MultipleNo" : "Не",
 		"Start" : "Започни",
-		"Stop" : "Спри",
+		"Stop" : "Спри"
 	},
 	"Polls" : 
 	{
@@ -33,7 +42,7 @@ var Bulgarian =
 		"MultipleYes" : "Да",
 		"MultipleNo" : "Не",
 		"Start" : "Започни",
-		"Stop" : "Спри",
+		"Stop" : "Спри"
 	},
 	"Other" :
 	{
@@ -49,6 +58,6 @@ var Bulgarian =
 	"Toggle" : 
 	{
 		"Show" : "Покажи",
-		"Hide" : "Скрий",
+		"Hide" : "Скрий"
 	} 
 }

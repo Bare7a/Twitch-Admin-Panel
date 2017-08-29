@@ -1,7 +1,7 @@
 $(document).ready(function() {
+	initConfig();
 	initLanguage(language, languages);
 	initPanels(size);
-	initTwitch();
 	initPoints();
 	initBetting();
 	initPolls();

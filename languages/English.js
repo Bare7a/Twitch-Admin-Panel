@@ -1,11 +1,20 @@
 var English =
 {
+	"Config" :
+	{
+		"Twitch" : "Twitch Channel",
+		"Title" : "Panel Title",
+		"Delimeter" : "Delimeter",
+		"Language" : "Language",
+		"Submit" : "Submit",
+		"Settings" : "Settings"
+	},
 	"Points" : 
 	{
 		"Points" : "Points",
 		"Username" : "Username | +Viewers | +Active",
 		"Give" : "Give",
-		"Take" : "Take",
+		"Take" : "Take"
 	},
 	"Betting" :
 	{
@@ -20,7 +29,7 @@ var English =
 		"MultipleYes" : "Yes",
 		"MultipleNo" : "No",
 		"Start" : "Start",
-		"Stop" : "Stop",
+		"Stop" : "Stop"
 	},
 	"Polls" : 
 	{
@@ -33,7 +42,7 @@ var English =
 		"MultipleYes" : "Yes",
 		"MultipleNo" : "No",
 		"Start" : "Start",
-		"Stop" : "Stop",
+		"Stop" : "Stop"
 	},
 	"Other" :
 	{
@@ -49,6 +58,6 @@ var English =
 	"Toggle" : 
 	{
 		"Show" : "Show",
-		"Hide" : "Hide",
+		"Hide" : "Hide"
 	} 
 }

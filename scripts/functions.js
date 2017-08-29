@@ -26,8 +26,21 @@ function copyToClipboard(textToCopy) {
 	$temp.remove();
 }
 
+function submitConfig(){
+	channelName = $('#confTwitch').val();
+	title = $('#confTitle').val();
+	delimeter = $('#confDelimeter').val();
+}
+
 function changeLanguage(language)
 {
+	$('#configTwitch').text(language.Config.Twitch);
+	$('#configTitle').text(language.Config.Title);
+	$('#configDelimeter').text(language.Config.Delimeter);
+	$('#configLanguage').text(language.Config.Language);
+	$('#configSettings').text(language.Config.Settings);
+	$('#configSubmit').text(language.Config.Submit);
+
 	$('#points').text(language.Points.Points);
 	$('#pointsPoints').attr("placeholder", language.Points.Points);
 	$('#pointsUsername').attr("placeholder", language.Points.Username);

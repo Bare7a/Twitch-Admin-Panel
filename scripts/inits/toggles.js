@@ -1,6 +1,8 @@
 function initToggles()
 {
-	$('#language').on('change', function(){
+
+	$('.language').on('change', function(){
+		$('.language').not(this).val(this.value);
 		var selected = eval($(this).find("option:selected").val());
 		changeLanguage(selected);
 	});
