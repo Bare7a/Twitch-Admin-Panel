@@ -1,4 +1,4 @@
-#Twitch Admin Panel
+# Twitch Admin Panel
 
 ## Functions
 - [x] Settings
